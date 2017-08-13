@@ -2,3 +2,4 @@ data/*
 has_read/*
 *.json
 *.html
+selenium_action/profile/*
