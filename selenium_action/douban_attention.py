@@ -20,18 +20,18 @@ try:
     # print('关注成功')
 
 
-    # browser.get('https://www.douban.com/people/cynthia717/contacts')
-    # elements = browser.find_elements(By.CLASS_NAME, 'nbg')
-    # #elements = driver.find_elements_by_class_name('nbg')
-    # names = []
-    # for ele in elements:
-    #     #print(i)
-    #     #i = i + 1
-    #     names.append(ele.get_attribute("href"))
-    #     #ele.click()
-    # print(names)
-
+    browser.get('https://www.douban.com/people/gotohell/contacts')
+    elements = browser.find_elements(By.CLASS_NAME, 'nbg')
+    #elements = driver.find_elements_by_class_name('nbg')
     names = []
+    for ele in elements:
+        #print(i)
+        #i = i + 1
+        names.append(ele.get_attribute("href"))
+        #ele.click()
+    print(names)
+
+    #names = []
     for name in names:
         browser.get(name)
         try:
